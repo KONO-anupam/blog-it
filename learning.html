@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning HTML, CSS and JavaScript</title>
+    <link href="/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-300">
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto p-4 flex items-center justify-between">
+            <a href="/" class="text-2xl font-bold text-blue-700">Blog-it</a>
+            <div id="menuToggle" class="text-gray-600 lg:hidden cursor-pointer">
+                <div class="bg-gray-800 h-0.5 w-3.5 my-0.5"></div>
+                <div class="bg-gray-800 h-0.5 w-3.5 my-0.5"></div>
+                <div class="bg-gray-800 h-0.5 w-3.5 my-0.5"></div>
+            </div>
+            <div id="navLinks" class="hidden lg:flex space-x-4 items-center">
+                <input type="text"
+                    class="search rounded-xl border px-4 py-1 focus:outline-none focus:ring focus:ring-blue-300"
+                    placeholder="Search blogs..." />
+            </div>
+        </nav>
+        <div id="mobileMenu" class="hidden lg:hidden bg-white shadow-md">
+            <input type="text" class="search w-full border px-4 py-2 focus:outline-none focus:ring focus:ring-blue-300"
+                placeholder="Search blogs..." />
+        </div>
+    </header>
+
+    <main class="bg-white items-center shadow-sm p-8 m-4 rounded-xl">
+        <div class="flex flex-col items-center">
+            <h2 class="text-4xl mb-3 font-bold">Learning HTML, CSS and JavaScript</h2>
+            <p class="text-sm self-end italic">Written on: 12th January, 2025; 8:52 A.M</p>
+        </div>
+        <div class="bg-gray-700 h-0.5 w-full mb-16"></div>
+        <div class="text-xl">
+            <p class="text-2xl font-semibold mb-3">The Motivation</p>
+            <p class="mb-1">
+                I already knew about HTML, CSS and JavaScript and their importance in developing websites but was never
+                really motivated to learn more about them.
+            </p>
+            <p class="mb-7">
+                However, on 27th December, 2024, the orientation session for freshers and sophomores was held. I finally
+                had an excuse to get into WebDev.
+            </p>
+            <p class="text-2xl font-semibold mb-3">Resources</p>
+            <p class="mb-1">
+                Like any average beginner, the first place I ended up seeking resources on was YouTube. I hopped from
+                one channel to another, searching for the best one. I ended up wasting almost 2 days in this fruitless
+                pursuit.
+            </p>
+            <p class="mb-1">
+                By the evening of the second day, tired of scrolling through YouTube, I was surfing Reddit. It was then
+                that I stumbled across this incredible website called <span class="font-semibold">The Odin
+                    Project</span>.
+            </p>
+            <p class="mb-1">
+                The Odin Project is one of those "What I wish I had when I was learning" resources. Not everyone has
+                access to a computer science education or the funds to attend an intensive coding school, and neither of
+                those is right for everyone anyway. This project is designed to fill in the gap for people who are
+                trying to hack it on their own but still want a high-quality education. On top of that, its vibrant
+                Discord community is always ready to help with any problem. Through this resource, I learned HTML and
+                CSS.
+            </p>
+            <p class="mb-1">
+                For learning Tailwind CSS, I used the Code with Harry playlist on YouTube.
+            </p>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white mt-12">
+        <div class="px-4 py-6 mx-auto">
+            <p class="text-center text-sm">
+                &copy; 2025 Blogify. All rights reserved.
+            </p>
+            <p class="text-center text-sm">
+                Built using HTML, Tailwind CSS, and JavaScript.
+            </p>
+            <p class="text-center">
+                <a href="https://github.com/KONO-anupam" class="text-blue-400 hover:underline">My GitHub</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

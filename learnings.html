@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnings from this project</title>
+    <link href="/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-300">
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto p-4 flex items-center justify-between">
+            <a href="/" class="text-2xl font-bold text-blue-700">Blog-it</a>
+            <div id="menuToggle" class="text-gray-600 lg:hidden cursor-pointer">
+                <div class="bg-gray-800 h-0.5 w-3.5 my-0.5"></div>
+                <div class="bg-gray-800 h-0.5 w-3.5 my-0.5"></div>
+                <div class="bg-gray-800 h-0.5 w-3.5 my-0.5"></div>
+            </div>
+            <div id="navLinks" class="hidden lg:flex space-x-4 items-center">
+                <input type="text"
+                    class="search rounded-xl border px-4 py-1 focus:outline-none focus:ring focus:ring-blue-300"
+                    placeholder="Search blogs..." />
+            </div>
+        </nav>
+        <div id="mobileMenu" class="hidden lg:hidden bg-white shadow-md">
+            <input type="text" class="search w-full border px-4 py-2 focus:outline-none focus:ring focus:ring-blue-300"
+                placeholder="Search blogs..." />
+        </div>
+    </header>
+
+    <main class="bg-white items-center shadow-sm p-8 m-4 rounded-xl">
+        <div class="flex flex-col items-center">
+            <h2 class="text-4xl mb-3 font-bold">Learnings from this project</h2>
+            <p class="text-sm self-end italic">Written on: 12th January, 2025; 18:09 P.M</p>
+        </div>
+        <div class="bg-gray-700 h-0.5 w-full mb-16"></div>
+        <div class="text-xl">
+            Besides improving my skills in structuring pages and applying styles to them, these are the most important
+            things I learned:
+            <ul class="list-disc ml-4">
+                <li>I learned to make a hamburger button, very useful for making responsive pages.</li>
+                <li>One may not think so, but adding recommendations to the search bar is a tough task.</li>
+                <li>I failed to add a dark mode toggle button to my page but learned about Tailwind's inbuilt ability to
+                    enable dark mode and tried transitions using JavaScript.</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white mt-12">
+        <div class="px-4 py-6 mx-auto">
+            <p class="text-center text-sm">
+                &copy; 2025 Blogify. All rights reserved.
+            </p>
+            <p class="text-center text-sm">
+                Built using HTML, Tailwind CSS, and JavaScript.
+            </p>
+            <p class="text-center">
+                <a href="https://github.com/KONO-anupam" class="text-blue-400 hover:underline">My GitHub</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

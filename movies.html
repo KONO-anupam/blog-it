@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourite Films and Shows</title>
+    <link href="/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-300">
+    <header class="bg-gray-50 shadow-md">
+        <nav class="container mx-auto p-4 flex items-center justify-between">
+            <a href="/" class="text-2xl font-bold text-blue-700">Blog-it</a>
+            <div id="menuToggle" class="text-gray-600 lg:hidden cursor-pointer">
+                <div class="bg-gray-800 h-0.5 w-3.5 my-0.5"></div>
+                <div class="bg-gray-800 h-0.5 w-3.5 my-0.5"></div>
+                <div class="bg-gray-800 h-0.5 w-3.5 my-0.5"></div>
+            </div>
+            <div id="navLinks" class="hidden lg:flex space-x-4 items-center">
+                <input type="text"
+                    class="search rounded-xl border px-4 py-1 focus:outline-none focus:ring focus:ring-blue-300"
+                    placeholder="Search blogs..." />
+            </div>
+        </nav>
+        <div id="mobileMenu" class="hidden lg:hidden bg-white shadow-md">
+            <input type="text" class="search w-full border px-4 py-2 focus:outline-none focus:ring focus:ring-blue-300"
+                placeholder="Search blogs..." />
+        </div>
+    </header>
+
+    <main class="bg-white items-center shadow-sm p-8 m-4 rounded-xl">
+        <div class="flex flex-col items-center">
+            <h2 class="text-4xl mb-3 font-bold">Favourite Films and Shows</h2>
+            <p class="text-sm self-end italic">Written on: 12th January, 2025; 18:09 P.M</p>
+        </div>
+        <div class="bg-gray-700 h-0.5 w-full mb-16"></div>
+        <div class="text-xl">
+            <p>These are some of my favourite movies and TV shows:</p>
+            <ul class="ml-4 list-disc">
+                <li>Deshdrohi</li>
+                <li>Morbius</li>
+                <li>Thugs of Hindostan</li>
+                <li>All Films of Bhoi</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white mt-12">
+        <div class="px-4 py-6 mx-auto">
+            <p class="text-center text-sm">
+                &copy; 2025 Blogify. All rights reserved.
+            </p>
+            <p class="text-center text-sm">
+                Built using HTML, Tailwind CSS and JavaScript
+            </p>
+            <p class="text-center">
+                <a href="https://github.com/KONO-anupam" class="text-blue-400 hover:underline">My GitHub</a>
+            </p>
+        </div>
+    </footer>
+
+    
+</body>
+
+</html>
