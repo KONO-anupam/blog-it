@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-it</title>
+    <link rel="stylesheet" href="./style.css?v=1.0">
+    <script src="./scripts.js" defer></script>
+</head>
+
+<body class="bg-gray-300">
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto p-4 flex items-center justify-between ">
+           
+            <a href="/" class="text-2xl font-bold text-blue-700">Blog-it
+            </a>
+
+            
+            <div id="menuToggle" class="text-gray-600 lg:hidden ">
+                <div class="bg-gray-800 h-0.5 w-3.5 my-0.5"></div>
+                <div class="bg-gray-800 h-0.5 w-3.5 my-0.5"></div>
+                <div class="bg-gray-800 h-0.5 w-3.5 my-0.5"></div>
+            </div>
+
+            
+            <div id="navLinks" class="hidden sm:hidden md:hidden lg:flex space-x-4 items-center flex-col">
+                <input type="text"
+                    class="searchInput rounded-xl border px-4 py-1 focus:outline-none focus:ring focus:ring-blue-300"
+                    id="searchInput" placeholder="Search blogs..." />
+
+                <section class="hidden flex-col space-y-2 bg-white shadow-md p-4 rounded-lg absolute mt-10 w-full lg:w-auto " id="blogContainer">
+                    <!-- Blog cards will be dynamically generated here -->
+                </section>
+            </div>
+        </nav>
+
+        
+        <div id="mobileMenu" class="hidden lg:hidden bg-white shadow-md">
+            <input type="text"
+                class="searchInput w-full border px-4 py-2 focus:outline-none focus:ring focus:ring-blue-300"
+                id="searchInput" placeholder="Search blogs..." />
+        </div>
+
+
+        
+        
+    </header>
+    <main class="container mx-auto mt-6">
+        <h1 class="text-4xl font-bold text-center text-gray-800">Featured Blogs</h1>
+        <h3 class="ml-6 mt-12 mb-8 text-3xl text-gray-700">WebDev</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+            <!-- Blog Card -->
+            <div class="bg-white p-4 shadow rounded-lg ml-4 mr-4">
+                <img src="images/problem-svgrepo-com.svg" alt="">
+                <h2 class="text-xl font-semibold text-gray-800">Shortcomings in the project</h2>
+                <p class="text-gray-600 mt-2">Problems unresolved in the project...</p>
+                <a href="/random.html" class="text-blue-600 hover:underline mt-4 block">Read more</a>
+            </div>
+            <div class="bg-white p-4 shadow rounded-lg ml-4 mr-4">
+                <img src="images/css-3-logo-svgrepo-com.svg" alt="">
+                <h2 class="text-xl font-semibold text-gray-800">Learn HTML,CSS and JavaScript</h2>
+                <p class="text-gray-600 mt-2">Get to Know How I learnt the things required to make this site... </p>
+                <a href="/learning.html" class="text-blue-600 hover:underline mt-4 block">Read more</a>
+            </div>
+            <div class="bg-white p-4 shadow rounded-lg ml-4  mr-4">
+                <img src="images/book-svgrepo-com.svg" alt="">
+                <h2 class="text-xl font-semibold text-gray-800">Learnings from this project</h2>
+                <p class="text-gray-600 mt-2">What I learnt while making this project...</p>
+                <a href="/learnings.html" class="text-blue-600 hover:underline mt-4 block">Read more</a>
+            </div>
+        </div>
+        <h3 class="ml-6 mt-12 mb-8 text-3xl text-gray-700 ">Expirences</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+
+            <div class="bg-white p-4 shadow rounded-lg ml-4  mr-4">
+                <img src="images/college-svgrepo-com.svg" alt="">
+                <h2 class="text-xl font-semibold text-gray-800">Expirence at NIT Rkl</h2>
+                <p class="text-gray-600 mt-2">My experience in this college has been...</p>
+                <a href="/experience.html" class="text-blue-600 hover:underline mt-4 block">Read more</a>
+            </div>
+            <div class="bg-white p-4 shadow rounded-lg ml-4  mr-4">
+                <img src="images/popcorn-svgrepo-com.svg" alt="">
+                <h2 class="text-xl font-semibold text-gray-800">Favourite Shows and Films</h2>
+                <p class="text-gray-600 mt-2">When it comes to pop culture, my favorite films and TV shows are...</p>
+                <a href="/movies.html" class="text-blue-600 hover:underline mt-4 block">Read more</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white mt-12">
+        <div class=" px-4 py-6 mx-auto">
+            <p class="text-center text-sm">
+                &copy; 2025 Blogify. All rights reserved.
+            </p>
+
+            <p class="text-center text-sm">
+                Built using HTML,Tailwind CSS and JavaScript
+
+            </p>
+            <p class="text-center "><a href="https://github.com/KONO-anupam" class="text-blue-400 hover:underline">My GitHub</a></p>
+        </div>
+    </footer>
+    
+
+</body>
+
+</html>
