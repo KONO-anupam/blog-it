@@ -16,27 +16,27 @@ const blogs = [
     {
         title: "Shortcomings in the project",
         description: "Problems unresolved in the project...",
-        link: "blogs/random.html",
+        link: "/random.html",
     },
     {
         title: "Learn HTML,CSS and JavaScript",
         description: "Get to Know How I learnt the things required to make this site...",
-        link: "blogs/learning.html",
+        link: "/learning.html",
     },
     {
         title: "Learnings from this project",
         description: "What I learnt while making this project...",
-        link: "blogs/learnings.html",
+        link: "/learnings.html",
     },
     {
         title: "Expirence at NIT Rkl",
         description: "My experience in this college has been...",
-        link: "blogs/experience.html",
+        link: "/experience.html",
     },
     {
         title: "Favourite Shows and Films",
         description: "When it comes to pop culture, my favorite films and TV shows are...",
-        link: "blogs/experience.html",
+        link: "/experience.html",
     },
 ];
 
