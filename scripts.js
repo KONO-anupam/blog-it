@@ -40,6 +40,22 @@ const blogs = [
     },
 ];
 
+// search functionality
+const searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("input", (e) => {
+    const query = e.target.value.toLowerCase();
+    if (query.trim() === "") {  
+        document.getElementById("blogContainer").classList.add("hidden");
+        return;
+    }
+    const filteredBlogs = blogs.filter((blog) =>
+        blog.title.toLowerCase().includes(query) ||
+        blog.description.toLowerCase().includes(query)
+    );
+
+    displayBlogs(filteredBlogs);
+});
 // function to display blogs
 const displayBlogs = (filteredBlogs) => {
     const blogContainer = document.getElementById("blogContainer");
@@ -64,19 +80,3 @@ const displayBlogs = (filteredBlogs) => {
         blogContainer.appendChild(blogCard);
     });
 };
-// search functionality
-const searchInput = document.getElementById("searchInput");
-
-searchInput.addEventListener("input", (e) => {
-    const query = e.target.value.toLowerCase();
-    if (query.trim() === "") {  
-        document.getElementById("blogContainer").classList.add("hidden");
-        return;
-    }
-    const filteredBlogs = blogs.filter((blog) =>
-        blog.title.toLowerCase().includes(query) ||
-        blog.description.toLowerCase().includes(query)
-    );
-
-    displayBlogs(filteredBlogs);
-});
